@@ -1,0 +1,196 @@
+.card {
+    margin-top: 16px;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 24px;
+}
+
+.header h2 {
+    margin: 0 0 5px;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header p {
+    margin: 0;
+
+    color: var(--color-text-muted);
+    font-size: 12px;
+}
+
+.viewAll {
+    padding: 7px 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: transparent;
+    color: var(--color-text-secondary);
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.viewAll:hover {
+    background: var(--color-surface-muted);
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    min-width: 650px;
+}
+
+.table th {
+    padding: 11px 24px;
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+
+    background: var(--color-surface-muted);
+
+    color: var(--color-text-muted);
+
+    font-size: 11px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.table td {
+    padding: 14px 24px;
+
+    border-bottom: 1px solid var(--color-border);
+
+    color: var(--color-text-secondary);
+
+    font-size: 12px;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr {
+    transition: background 150ms ease;
+}
+
+.table tbody tr:hover {
+    background: #fafafa;
+}
+
+.merchant {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.merchantIcon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: var(--color-primary);
+    color: white;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.merchant strong {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: var(--color-text);
+    font-size: 12px;
+}
+
+.merchant span {
+    display: block;
+
+    color: var(--color-text-muted);
+    font-size: 10px;
+}
+
+.category {
+    padding: 5px 8px;
+
+    border-radius: 6px;
+
+    background: var(--color-surface-muted);
+
+    color: var(--color-text-secondary);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.date {
+    color: var(--color-text-secondary);
+}
+
+.success,
+.failed {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.failed {
+    color: var(--color-danger);
+}
+
+.pending {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.statusDot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+.clickableRow {
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.clickableRow:hover {
+    background: #f8fafc;
+}

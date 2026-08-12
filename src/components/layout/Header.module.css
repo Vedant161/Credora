@@ -1,0 +1,152 @@
+.header {
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.notificationButton,
+.coinBalance {
+    border: none;
+    background: transparent;
+    font: inherit;
+}
+
+.notificationButton {
+    cursor: pointer;
+}
+
+.coinBalance {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.coinBalance:hover {
+    opacity: 0.8;
+}
+
+.coinAmount {
+    display: block;
+}
+
+.coinLabel {
+    display: block;
+}
+
+.searchIcon {
+    color: var(--color-text-muted);
+    font-size: 20px;
+}
+
+.search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--color-text);
+    font-size: 13px;
+}
+
+.search input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notificationButton {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+}
+
+.coinBalance {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.coinIcon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--color-warning-soft);
+    color: var(--color-warning);
+
+    font-size: 12px;
+}
+
+.coinAmount {
+    display: block;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.coinLabel {
+    display: block;
+
+    color: var(--color-text-muted);
+    font-size: 11px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e5e7eb;
+
+    font-size: 13px;
+    font-weight: 600;
+}

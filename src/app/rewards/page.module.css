@@ -1,0 +1,379 @@
+.page {
+    min-height: 100%;
+    padding: 32px 36px 48px;
+    background: #f7f8fa;
+}
+
+.heading {
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    margin: 0 0 6px;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.heading h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.heading>p:last-child {
+    margin: 8px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* Balance */
+
+.balanceCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 40px;
+    padding: 28px 32px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.balanceLabel {
+    margin: 0 0 6px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.balance {
+    color: #111827;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.coinsLabel {
+    margin-left: 8px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.balanceStats {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.balanceStats>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 100px;
+}
+
+.balanceStats span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.balanceStats strong {
+    color: #111827;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Rewards section */
+
+.rewardsSection {
+    margin-top: 8px;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.sectionHeader h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 21px;
+    font-weight: 650;
+    letter-spacing: -0.015em;
+}
+
+.sectionHeader>span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* Reward cards */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.rewardCard {
+    display: flex;
+    min-height: 235px;
+    flex-direction: column;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.035);
+    transition:
+        transform 160ms ease,
+        box-shadow 160ms ease,
+        border-color 160ms ease;
+}
+
+.rewardCard:hover {
+    transform: translateY(-2px);
+    border-color: #d8dde5;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+}
+
+.rewardIcon {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #111827;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.rewardCard h3 {
+    margin: 0;
+    color: #111827;
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.rewardCard>p {
+    margin: 8px 0 20px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.rewardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.rewardFooter strong {
+    color: #111827;
+    font-size: 13px;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.rewardFooter button {
+    min-width: 82px;
+    padding: 9px 14px;
+    border: 1px solid #111827;
+    border-radius: 8px;
+    background: #111827;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    transition:
+        background 160ms ease,
+        border-color 160ms ease,
+        opacity 160ms ease;
+}
+
+.rewardFooter button:hover:not(:disabled) {
+    background: #1f2937;
+    border-color: #1f2937;
+}
+
+.rewardFooter button:disabled {
+    border-color: #e5e7eb;
+    background: #f1f5f9;
+    color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.successMessage {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    background: #f0fdf4;
+    color: #166534;
+    font-size: 13px;
+}
+
+.errorMessage {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 13px;
+}
+
+.historySection {
+    margin-top: 44px;
+}
+
+.historyCard {
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.historyRow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px 20px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.historyRow:last-child {
+    border-bottom: none;
+}
+
+.historyIcon {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: #f8fafc;
+    color: #111827;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.historyDetails {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.historyDetails strong {
+    color: #111827;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.historyDetails span {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.historyCoins {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.emptyHistory {
+    padding: 40px 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.emptyHistory h3 {
+    margin: 0;
+    color: #111827;
+    font-size: 15px;
+}
+
+.emptyHistory p {
+    margin: 6px 0 0;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .page {
+        padding: 24px 20px 40px;
+    }
+
+    .balanceCard {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .balanceStats {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 26px;
+    }
+
+    .balance {
+        font-size: 32px;
+    }
+
+    .balanceStats {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .balanceStats>div {
+        min-width: 0;
+    }
+
+    .rewardFooter {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .rewardFooter button {
+        width: 100%;
+    }
+}
